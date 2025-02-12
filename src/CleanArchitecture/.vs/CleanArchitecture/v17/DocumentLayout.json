@@ -1,0 +1,161 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Bruno\\Programacion\\Backend\\CleanArchitecture - .NET University\\src\\CleanArchitecture\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{89210EBA-F8A5-4362-A272-AD25818FD689}|CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj|d:\\bruno\\programacion\\backend\\cleanarchitecture - .net university\\src\\cleanarchitecture\\cleanarchitecture.domain\\users\\usererrors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89210EBA-F8A5-4362-A272-AD25818FD689}|CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj|solutionrelative:cleanarchitecture.domain\\users\\usererrors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89210EBA-F8A5-4362-A272-AD25818FD689}|CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj|d:\\bruno\\programacion\\backend\\cleanarchitecture - .net university\\src\\cleanarchitecture\\cleanarchitecture.domain\\alquileres\\alquilererrors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89210EBA-F8A5-4362-A272-AD25818FD689}|CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj|solutionrelative:cleanarchitecture.domain\\alquileres\\alquilererrors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89210EBA-F8A5-4362-A272-AD25818FD689}|CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj|d:\\bruno\\programacion\\backend\\cleanarchitecture - .net university\\src\\cleanarchitecture\\cleanarchitecture.domain\\abstractions\\error.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89210EBA-F8A5-4362-A272-AD25818FD689}|CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj|solutionrelative:cleanarchitecture.domain\\abstractions\\error.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89210EBA-F8A5-4362-A272-AD25818FD689}|CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj|d:\\bruno\\programacion\\backend\\cleanarchitecture - .net university\\src\\cleanarchitecture\\cleanarchitecture.domain\\abstractions\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89210EBA-F8A5-4362-A272-AD25818FD689}|CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj|solutionrelative:cleanarchitecture.domain\\abstractions\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C69DC8E-83E2-47ED-8EDB-4D2F4E2E5ABF}|CleanArchitecture.Api\\CleanArchitecture.Api.csproj|d:\\bruno\\programacion\\backend\\cleanarchitecture - .net university\\src\\cleanarchitecture\\cleanarchitecture.api\\controllers\\alquileres\\alquilerescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C69DC8E-83E2-47ED-8EDB-4D2F4E2E5ABF}|CleanArchitecture.Api\\CleanArchitecture.Api.csproj|solutionrelative:cleanarchitecture.api\\controllers\\alquileres\\alquilerescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9347A64-1EA6-4923-AF97-8516670A7A2A}|CleanArchitecture.Application\\CleanArchitecture.Application.csproj|d:\\bruno\\programacion\\backend\\cleanarchitecture - .net university\\src\\cleanarchitecture\\cleanarchitecture.application\\alquileres\\reservaralquiler\\reservaralquilercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9347A64-1EA6-4923-AF97-8516670A7A2A}|CleanArchitecture.Application\\CleanArchitecture.Application.csproj|solutionrelative:cleanarchitecture.application\\alquileres\\reservaralquiler\\reservaralquilercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9347A64-1EA6-4923-AF97-8516670A7A2A}|CleanArchitecture.Application\\CleanArchitecture.Application.csproj|d:\\bruno\\programacion\\backend\\cleanarchitecture - .net university\\src\\cleanarchitecture\\cleanarchitecture.application\\alquileres\\reservaralquiler\\reservaralquilercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9347A64-1EA6-4923-AF97-8516670A7A2A}|CleanArchitecture.Application\\CleanArchitecture.Application.csproj|solutionrelative:cleanarchitecture.application\\alquileres\\reservaralquiler\\reservaralquilercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C69DC8E-83E2-47ED-8EDB-4D2F4E2E5ABF}|CleanArchitecture.Api\\CleanArchitecture.Api.csproj|d:\\bruno\\programacion\\backend\\cleanarchitecture - .net university\\src\\cleanarchitecture\\cleanarchitecture.api\\controllers\\alquileres\\alquilerreservarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C69DC8E-83E2-47ED-8EDB-4D2F4E2E5ABF}|CleanArchitecture.Api\\CleanArchitecture.Api.csproj|solutionrelative:cleanarchitecture.api\\controllers\\alquileres\\alquilerreservarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AlquilerErrors.cs",
+              "DocumentMoniker": "D:\\Bruno\\Programacion\\Backend\\CleanArchitecture - .NET University\\src\\CleanArchitecture\\CleanArchitecture.Domain\\Alquileres\\AlquilerErrors.cs",
+              "RelativeDocumentMoniker": "CleanArchitecture.Domain\\Alquileres\\AlquilerErrors.cs",
+              "ToolTip": "D:\\Bruno\\Programacion\\Backend\\CleanArchitecture - .NET University\\src\\CleanArchitecture\\CleanArchitecture.Domain\\Alquileres\\AlquilerErrors.cs",
+              "RelativeToolTip": "CleanArchitecture.Domain\\Alquileres\\AlquilerErrors.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T23:24:24.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Result.cs",
+              "DocumentMoniker": "D:\\Bruno\\Programacion\\Backend\\CleanArchitecture - .NET University\\src\\CleanArchitecture\\CleanArchitecture.Domain\\Abstractions\\Result.cs",
+              "RelativeDocumentMoniker": "CleanArchitecture.Domain\\Abstractions\\Result.cs",
+              "ToolTip": "D:\\Bruno\\Programacion\\Backend\\CleanArchitecture - .NET University\\src\\CleanArchitecture\\CleanArchitecture.Domain\\Abstractions\\Result.cs",
+              "RelativeToolTip": "CleanArchitecture.Domain\\Abstractions\\Result.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T23:23:16.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Error.cs",
+              "DocumentMoniker": "D:\\Bruno\\Programacion\\Backend\\CleanArchitecture - .NET University\\src\\CleanArchitecture\\CleanArchitecture.Domain\\Abstractions\\Error.cs",
+              "RelativeDocumentMoniker": "CleanArchitecture.Domain\\Abstractions\\Error.cs",
+              "ToolTip": "D:\\Bruno\\Programacion\\Backend\\CleanArchitecture - .NET University\\src\\CleanArchitecture\\CleanArchitecture.Domain\\Abstractions\\Error.cs",
+              "RelativeToolTip": "CleanArchitecture.Domain\\Abstractions\\Error.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T22:24:41.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserErrors.cs",
+              "DocumentMoniker": "D:\\Bruno\\Programacion\\Backend\\CleanArchitecture - .NET University\\src\\CleanArchitecture\\CleanArchitecture.Domain\\Users\\UserErrors.cs",
+              "RelativeDocumentMoniker": "CleanArchitecture.Domain\\Users\\UserErrors.cs",
+              "ToolTip": "D:\\Bruno\\Programacion\\Backend\\CleanArchitecture - .NET University\\src\\CleanArchitecture\\CleanArchitecture.Domain\\Users\\UserErrors.cs",
+              "RelativeToolTip": "CleanArchitecture.Domain\\Users\\UserErrors.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T22:24:33.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReservarAlquilerCommandHandler.cs",
+              "DocumentMoniker": "D:\\Bruno\\Programacion\\Backend\\CleanArchitecture - .NET University\\src\\CleanArchitecture\\CleanArchitecture.Application\\Alquileres\\ReservarAlquiler\\ReservarAlquilerCommandHandler.cs",
+              "RelativeDocumentMoniker": "CleanArchitecture.Application\\Alquileres\\ReservarAlquiler\\ReservarAlquilerCommandHandler.cs",
+              "ToolTip": "D:\\Bruno\\Programacion\\Backend\\CleanArchitecture - .NET University\\src\\CleanArchitecture\\CleanArchitecture.Application\\Alquileres\\ReservarAlquiler\\ReservarAlquilerCommandHandler.cs",
+              "RelativeToolTip": "CleanArchitecture.Application\\Alquileres\\ReservarAlquiler\\ReservarAlquilerCommandHandler.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAgwEkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T22:23:04.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ReservarAlquilerCommandValidator.cs",
+              "DocumentMoniker": "D:\\Bruno\\Programacion\\Backend\\CleanArchitecture - .NET University\\src\\CleanArchitecture\\CleanArchitecture.Application\\Alquileres\\ReservarAlquiler\\ReservarAlquilerCommandValidator.cs",
+              "RelativeDocumentMoniker": "CleanArchitecture.Application\\Alquileres\\ReservarAlquiler\\ReservarAlquilerCommandValidator.cs",
+              "ToolTip": "D:\\Bruno\\Programacion\\Backend\\CleanArchitecture - .NET University\\src\\CleanArchitecture\\CleanArchitecture.Application\\Alquileres\\ReservarAlquiler\\ReservarAlquilerCommandValidator.cs",
+              "RelativeToolTip": "CleanArchitecture.Application\\Alquileres\\ReservarAlquiler\\ReservarAlquilerCommandValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T22:21:23.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AlquilerReservaRequest.cs",
+              "DocumentMoniker": "D:\\Bruno\\Programacion\\Backend\\CleanArchitecture - .NET University\\src\\CleanArchitecture\\CleanArchitecture.Api\\Controllers\\Alquileres\\AlquilerReservaRequest.cs",
+              "RelativeDocumentMoniker": "CleanArchitecture.Api\\Controllers\\Alquileres\\AlquilerReservaRequest.cs",
+              "ToolTip": "D:\\Bruno\\Programacion\\Backend\\CleanArchitecture - .NET University\\src\\CleanArchitecture\\CleanArchitecture.Api\\Controllers\\Alquileres\\AlquilerReservaRequest.cs",
+              "RelativeToolTip": "CleanArchitecture.Api\\Controllers\\Alquileres\\AlquilerReservaRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T22:20:48.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AlquileresController.cs",
+              "DocumentMoniker": "D:\\Bruno\\Programacion\\Backend\\CleanArchitecture - .NET University\\src\\CleanArchitecture\\CleanArchitecture.Api\\Controllers\\Alquileres\\AlquileresController.cs",
+              "RelativeDocumentMoniker": "CleanArchitecture.Api\\Controllers\\Alquileres\\AlquileresController.cs",
+              "ToolTip": "D:\\Bruno\\Programacion\\Backend\\CleanArchitecture - .NET University\\src\\CleanArchitecture\\CleanArchitecture.Api\\Controllers\\Alquileres\\AlquileresController.cs",
+              "RelativeToolTip": "CleanArchitecture.Api\\Controllers\\Alquileres\\AlquileresController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAywCsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T22:20:47.216Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
