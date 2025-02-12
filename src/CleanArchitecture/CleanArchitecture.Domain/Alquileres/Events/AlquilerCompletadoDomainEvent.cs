@@ -2,4 +2,4 @@
 
 namespace CleanArchitecture.Domain.Alquileres.Events;
 
-public sealed record AlquilerCompletadoDomainEvent(Guid id): IDomainEvent;
+public sealed record AlquilerCompletadoDomainEvent(AlquilerId id): IDomainEvent;

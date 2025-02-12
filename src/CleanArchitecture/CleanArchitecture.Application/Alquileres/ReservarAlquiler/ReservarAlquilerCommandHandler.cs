@@ -2,9 +2,9 @@ using CleanArchitecture.Application.Abstractions.Messaging;
 using CleanArchitecture.Application.Abstractions.Clock;
 using CleanArchitecture.Domain.Abstractions;
 using CleanArchitecture.Domain.Alquileres;
-using CleanArchitecture.Domain.Users;
 using CleanArchitecture.Domain.Vehiculos;
 using CleanArchitecture.Application.Exceptions;
+using CleanArchitecture.Domain.Users;
 
 namespace CleanArchitecture.Application.Alquileres.ReservarAlquiler;
 
@@ -37,13 +37,14 @@ internal sealed class ReservarAlquilerCommandHanlder : ICommandHandler<ReservarA
     public async Task<Result<Guid>> Handle(ReservarAlquilerCommand request, CancellationToken cancellationToken)
     {
         //busqueda de usuario
-        var user = await _userRepository.GetByIdAsync(request.UserId, cancellationToken);
+        var userId = new UserId(request.UserId);
+        var user = await _userRepository.GetByIdAsync(userId, cancellationToken);
 
         if (user == null){
             return Result.Failure<Guid>(UserErrors.NotFound);
         }
-
-        var vehiculo = await _vehiculoRepository.GetByIdAsync(request.VehiculoId, cancellationToken);
+        var vehiculoId = new VehiculoId(request.VehiculoId);
+        var vehiculo = await _vehiculoRepository.GetByIdAsync(vehiculoId, cancellationToken);
 
         if (vehiculo == null){
             return Result.Failure<Guid>(VehiculoErrors.NotFound);
@@ -64,7 +65,7 @@ internal sealed class ReservarAlquilerCommandHanlder : ICommandHandler<ReservarA
 
             await _unitOfWork.SaveChangesAsync();
             
-            return alquiler.Id;     
+            return alquiler.Id!.value;     
         }
         catch (ConcurrencyException)
         {

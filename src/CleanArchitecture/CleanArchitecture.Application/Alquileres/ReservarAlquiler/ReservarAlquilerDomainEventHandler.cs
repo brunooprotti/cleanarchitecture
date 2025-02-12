@@ -35,7 +35,7 @@ internal sealed class ReservarAlquilerDomainEventHandler : INotificationHandler<
             return;
         }
 
-        var user = await _userRepository.GetByIdAsync(alquiler.UserId, cancellationToken);
+        var user = await _userRepository.GetByIdAsync(alquiler.UserId!, cancellationToken);
 
         if (user == null)
         {

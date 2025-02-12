@@ -1,4 +1,5 @@
 using CleanArchitecture.Application.Abstractions.Messaging;
+using CleanArchitecture.Domain.Alquileres;
 
 namespace CleanArchitecture.Application.Alquileres.GetAlquiler;
 

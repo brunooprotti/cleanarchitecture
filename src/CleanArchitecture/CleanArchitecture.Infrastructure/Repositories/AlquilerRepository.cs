@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CleanArchitecture.Infrastructure.Repositories;
 
-internal sealed class AlquilerRepository : Repository<Alquiler>, IAlquilerRepository
+internal sealed class AlquilerRepository : Repository<Alquiler, AlquilerId>, IAlquilerRepository
 {
     private static readonly AlquilerStatus[] ActiveAlquilerStatuses = { AlquilerStatus.Reservado, AlquilerStatus.Confirmado, AlquilerStatus.Completado };
 
@@ -15,7 +15,7 @@ internal sealed class AlquilerRepository : Repository<Alquiler>, IAlquilerReposi
         return await DbContext.Set<Alquiler>()
             .AnyAsync(
                 alquiler => alquiler.VehiculoId == vehiculo.Id &&
-                            alquiler.Duracion.Inicio <= duracion.Fin &&
+                            alquiler.Duracion!.Inicio <= duracion.Fin &&
                             alquiler.Duracion.Fin >= duracion.Inicio &&
                             ActiveAlquilerStatuses.Contains(alquiler.Status),
                             cancellationToken

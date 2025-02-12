@@ -21,7 +21,7 @@ public sealed class User : Entity<UserId>
     public static User Create(Nombre nombre, Apellido apellido, Email email)
     {
         var user = new User(id:UserId.New(), nombre, apellido, email);
-        user.RaiseDomainEvent(new UserCreatedDomainEvent(user.Id));
+        user.RaiseDomainEvent(new UserCreatedDomainEvent(user.Id!));
         return user;
     }
 }

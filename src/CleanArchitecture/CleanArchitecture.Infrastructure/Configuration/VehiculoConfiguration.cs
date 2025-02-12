@@ -12,6 +12,9 @@ internal sealed class VehiculoConfiguration : IEntityTypeConfiguration<Vehiculo>
         builder.ToTable("vehiculos");
         builder.HasKey(vehiculo => vehiculo.Id);
 
+        builder.Property(vehiculo => vehiculo.Id)
+            .HasConversion(vehiculoId => vehiculoId!.value, value => new VehiculoId(value));
+
         //Esto nos permite guardar el objeto direccion dentro del objeto vehiculo.
         //Indicamos que vehiculo es dueño de una direccion.
         //Basicamente a los objectValue con varias properties los agregamos asi, a los demas los agregamos con las rules abajo.

@@ -2,7 +2,7 @@
 
 
 //Clase de la cual heredan todas
-public abstract class Entity<TEntityId>
+public abstract class Entity<TEntityId> : IEntity
 {
     protected Entity() { }
 
@@ -13,7 +13,7 @@ public abstract class Entity<TEntityId>
         Id = id;
     }
 
-    public TEntityId Id { get; init; } 
+    public TEntityId? Id { get; init; } 
 
     //obtener todos los IDomainEvents
     public IReadOnlyList<IDomainEvent> GetDomainEvents() 
