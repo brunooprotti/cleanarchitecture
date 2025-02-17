@@ -1,6 +1,6 @@
-using CleanArchitecture.Application.Users;
 using CleanArchitecture.Application.Users.LoginUser;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CleanArchitecture.Api.Controllers.Users;
@@ -16,6 +16,7 @@ public class UserController : ControllerBase
         _sender = sender;
     }
 
+    [AllowAnonymous]
     public async Task<IActionResult> Login([FromBody] LoginUserRequest request , CancellationToken cancellationToken) 
     {
         var command = new LoginCommand(request.Email, request.Password);
