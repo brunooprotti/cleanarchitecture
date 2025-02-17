@@ -1,0 +1,13 @@
+# Ignorar archivos de compilación
+bin/
+obj/
+*.dll
+*.pdb
+*.exe
+*.cache
+*.json
+*.txt
+*.AssemblyReference.cache
+*.FileListAbsolute.txt
+*.overfit
+*.sourceink.json
