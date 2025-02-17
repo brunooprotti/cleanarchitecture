@@ -63,3 +63,4 @@ D:\Bruno\Programacion\Backend\CleanArchitecture - .NET University\src\CleanArchi
 D:\Bruno\Programacion\Backend\CleanArchitecture - .NET University\src\CleanArchitecture\CleanArchitecture.Api\obj\Debug\net9.0\CleanArchitecture.Api.pdb
 D:\Bruno\Programacion\Backend\CleanArchitecture - .NET University\src\CleanArchitecture\CleanArchitecture.Api\obj\Debug\net9.0\CleanArchitecture.Api.genruntimeconfig.cache
 D:\Bruno\Programacion\Backend\CleanArchitecture - .NET University\src\CleanArchitecture\CleanArchitecture.Api\obj\Debug\net9.0\ref\CleanArchitecture.Api.dll
+D:\Bruno\Programacion\Backend\CleanArchitecture - .NET University\src\CleanArchitecture\CleanArchitecture.Api\bin\Debug\net9.0\BCrypt.Net-Next.dll

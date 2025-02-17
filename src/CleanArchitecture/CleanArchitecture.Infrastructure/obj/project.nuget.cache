@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "vMz4so7BpVQ=",
+  "dgSpecHash": "7NAE2zoV3n8=",
   "success": true,
   "projectFilePath": "D:\\Bruno\\Programacion\\Backend\\CleanArchitecture - .NET University\\src\\CleanArchitecture\\CleanArchitecture.Infrastructure\\CleanArchitecture.Infrastructure.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\bruno\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\dapper\\2.1.15\\dapper.2.1.15.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\efcore.namingconventions\\7.0.2\\efcore.namingconventions.7.0.2.nupkg.sha512",
     "C:\\Users\\bruno\\.nuget\\packages\\fluentvalidation\\11.8.0\\fluentvalidation.11.8.0.nupkg.sha512",

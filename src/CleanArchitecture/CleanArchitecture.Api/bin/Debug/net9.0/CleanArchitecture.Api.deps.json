@@ -19,6 +19,14 @@
           "CleanArchitecture.Api.dll": {}
         }
       },
+      "BCrypt.Net-Next/4.0.3": {
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "assemblyVersion": "4.0.3.0",
+            "fileVersion": "4.0.3.0"
+          }
+        }
+      },
       "Bogus/35.6.1": {
         "runtime": {
           "lib/net6.0/Bogus.dll": {
@@ -367,6 +375,7 @@
       },
       "CleanArchitecture.Application/1.0.0": {
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "CleanArchitecture.Domain": "1.0.0",
           "Dapper": "2.1.15",
           "FluentValidation.DependencyInjectionExtensions": "11.8.0",
@@ -375,7 +384,7 @@
         },
         "runtime": {
           "CleanArchitecture.Application.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -386,7 +395,7 @@
         },
         "runtime": {
           "CleanArchitecture.Domain.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -402,7 +411,7 @@
         },
         "runtime": {
           "CleanArchitecture.Infrastructure.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -414,6 +423,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "BCrypt.Net-Next/4.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-W+U9WvmZQgi5cX6FS5GDtDoPzUCV4LkBLkywq/kRZhuDwcbavOzcDAr3LXJFqHUi952Yj3LEYoWW0jbEUQChsA==",
+      "path": "bcrypt.net-next/4.0.3",
+      "hashPath": "bcrypt.net-next.4.0.3.nupkg.sha512"
     },
     "Bogus/35.6.1": {
       "type": "package",
