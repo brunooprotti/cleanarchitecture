@@ -10,8 +10,9 @@ internal sealed class UserRepository : Repository<User, UserId>, IUserRepository
     public UserRepository(ApplicationDbContext dbContext) : base(dbContext){ }
 
     public async Task<User?> GetByEmailAsync(Domain.Users.Email email, CancellationToken cancellationToken = default)
-    {
-        return await DbContext.Set<User>()
-                        .FirstOrDefaultAsync(x=> x.Email == email, cancellationToken);
-    }
+        => await DbContext.Set<User>()
+                          .FirstOrDefaultAsync(x=> x.Email == email, cancellationToken);
+    
+    public async Task<bool> IsUserExists(Domain.Users.Email email, CancellationToken cancellationToken = default)
+        => await DbContext.Set<User>().AnyAsync(u => u.Email == email, cancellationToken);
 }
