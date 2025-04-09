@@ -4,9 +4,9 @@ EXPOSE 80
 
 FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /src
-COPY ["CleanArchitecture.Api/CleanArchitecture.Domain.csproj", "CleanArchitecture.Domain/"]
-COPY ["CleanArchitecture.Api/CleanArchitecture.Application.csproj", "CleanArchitecture.Application/"]
-COPY ["CleanArchitecture.Api/CleanArchitecture.Infrastructure.csproj", "CleanArchitecture.Infrastructure/"]
+COPY ["CleanArchitecture.Domain/CleanArchitecture.Domain.csproj", "CleanArchitecture.Domain/"]
+COPY ["CleanArchitecture.Application/CleanArchitecture.Application.csproj", "CleanArchitecture.Application/"]
+COPY ["CleanArchitecture.Infrastructure/CleanArchitecture.Infrastructure.csproj", "CleanArchitecture.Infrastructure/"]
 COPY ["CleanArchitecture.Api/CleanArchitecture.Api.csproj", "CleanArchitecture.Api/"]
 RUN dotnet restore "CleanArchitecture.Api/CleanArchitecture.Api.csproj"
 COPY . .

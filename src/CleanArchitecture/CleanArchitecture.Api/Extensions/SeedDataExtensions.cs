@@ -10,7 +10,7 @@ namespace CleanArchitecture.Api.Extensions;
 public static class SeedDataExtensions 
 {
 
-    public static void SeedDataAuthentication(this IApplicationBuilder app)
+    public async static Task SeedDataAuthentication(this IApplicationBuilder app)
     {
         using var scope = app.ApplicationServices.CreateScope();
         var service = scope.ServiceProvider;
@@ -44,7 +44,7 @@ public static class SeedDataExtensions
 
                 context.Add(user);
 
-                context.SaveChangesAsync().Wait();
+                await context.SaveChangesAsync();
             }
             
         }

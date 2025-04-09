@@ -33,9 +33,9 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
-app.ApplyMigration();
+await app.ApplyMigration();
 app.SeedData();
-app.SeedDataAuthentication();
+await app.SeedDataAuthentication();
 
 app.UseCustomExceptionHandler();
 
@@ -43,5 +43,12 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.Use(async (context, next) =>
+{
+    Console.WriteLine($"Request: {context.Request.Method} {context.Request.Path}");
+    await next();
+});
+
 
 app.Run();

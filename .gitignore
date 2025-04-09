@@ -1,13 +1,32 @@
-# Ignorar archivos de compilación
+# Build outputs
 bin/
 obj/
-*.dll
-*.pdb
-*.exe
+out/
+publish/
+
+# IDE
+.vscode/
+.vs/
+
+# Container-generated
+.containers/
+
+# User-specific files
+*.user
+*.suo
+
+# Cache/Temp
+*.db
 *.cache
-*.json
-*.txt
-*.AssemblyReference.cache
+*.log
+*.tmp
+*.pid
+
+# Docker
+**/root/.aspnet/DataProtection-Keys/
+
+# VS design-time build files
 *.FileListAbsolute.txt
-*.overfit
-*.sourceink.json
+*.AssemblyReference.cache
+*.dbcache*
+*.vscode*

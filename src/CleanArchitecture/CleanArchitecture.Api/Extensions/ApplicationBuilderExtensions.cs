@@ -6,7 +6,7 @@ namespace CleanArchitecture.Api.Extensions;
 
 public static class ApplicationBuilderExtensions 
 {
-    public static void ApplyMigration(this IApplicationBuilder app)
+    public static async Task ApplyMigration(this IApplicationBuilder app)
     {
         using(var scope = app.ApplicationServices.CreateScope())
         {
@@ -16,7 +16,7 @@ public static class ApplicationBuilderExtensions
             try
             {
                 var context = serviceProvider.GetRequiredService<ApplicationDbContext>();
-                context.Database.MigrateAsync();
+                await context.Database.MigrateAsync();
             }
             catch (Exception ex)
             {

@@ -9,7 +9,7 @@ services:
       - POSTGRES_DB=cleanarchitecture
     restart: always
     volumes:
-      - ./.containers/database:var/lib/postgresql/data/
+      - ./.containers/database:/var/lib/postgresql/data/
     ports:
       - 5432:5432
   
@@ -17,9 +17,9 @@ services:
     container_name: cleanarchitectureapi
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_URLS=http://+:80
-      - "ConnectionStrings_DefaultConnection=Host=cleanarchitecturedb;Port=5432;Database=cleanarchitecture;Username=postgres;Password=postgres"
+      - ASPNETCORE_URLS=http://+:5000
+      - ConnectionStrings__DefaultConnection=Host=cleanarchitecturedb;Port=5432;Database=cleanarchitecture;Username=postgres;Password=postgres
     depends_on:
       - cleanarchitecturedb
     ports:
-      - 5000:80
+      - 80:5000
