@@ -1,3 +1,4 @@
+using CleanArchitecture.Application.Users;
 using CleanArchitecture.Domain.Users;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
@@ -33,6 +34,10 @@ internal sealed class UserConfiguration : IEntityTypeConfiguration<User>
             .HasConversion(password => password!.Value, value => new PasswordHash(value));
            
         builder.HasIndex(user => user.Email!).IsUnique();
-           
+
+        builder.HasMany(user => user.Roles)
+            .WithMany()
+            .UsingEntity<UserRole>();
+
     }
 }
