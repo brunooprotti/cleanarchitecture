@@ -1,14 +1,18 @@
-using CleanArchitecture.Application.Abstractions.Messaging;
+using CleanArchitecture.Domain.Abstractions;
 using MediatR;
 using Microsoft.Extensions.Logging;
+using Serilog.Context;
 
 namespace CleanArchitecture.Application.Abstractions.Behaviours;
 
-public class LoggingBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> where TRequest : IBaseCommand
+public class LoggingBehaviour<TRequest, TResponse> : 
+    IPipelineBehavior<TRequest, TResponse> 
+    where TRequest : IBaseRequest 
+    where TResponse : Result
 {
-    private readonly ILogger<TRequest> _logger;
+    private readonly ILogger<LoggingBehaviour<TRequest,TResponse>> _logger;
 
-    public LoggingBehaviour(ILogger<TRequest> logger)
+    public LoggingBehaviour(ILogger<LoggingBehaviour<TRequest, TResponse>> logger)
     {
         _logger = logger;
     }
@@ -19,21 +23,31 @@ public class LoggingBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest,
         CancellationToken cancellationToken
         )
     {
-        //Necesitamos saber que command se esta evaluando, si nos fijamos en la firma de la clase, solo declaramos para los Commands. No soporta queries.
+        //Necesitamos saber que command o querie se esta evaluando.
 
         var name = request.GetType().Name;
 
         try
         {
-            _logger.LogInformation($"Ejecutando el command request: {name}");
+            _logger.LogInformation($"Ejecutando el request: {name}", name);
             var result = await next();
-            _logger.LogInformation($"El comando {name} se ejecuto correctamente");
+
+            if (result.IsSuccess)
+                _logger.LogInformation($"El request {name} fue exitoso", name);
+
+            if (result.IsFailure)
+                using (LogContext.PushProperty( "Error", result.Error, true))
+                {
+                    _logger.LogError($"El request {name} tuvo errores", name);
+                }
+
+            _logger.LogInformation($"El request {name} se ejecutó correctamente", name);
 
             return result;
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex,$"El comando {name} tuvo errores");
+            _logger.LogError(ex,$"El request {name} tuvo errores", name);
             throw;
         }
     }

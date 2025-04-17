@@ -22,4 +22,12 @@ services:
     depends_on:
       - cleanarchitecturedb
     ports:
-      - 80:5000
+      #- 80:5000
+      - 5000:5000
+  serilogseq:
+    container_name: serilogseq
+    environment:
+      - ACCEPT_EULA=Y
+    ports:
+        - 5341:5341 # API
+        - 8081:80 # UI LOGS

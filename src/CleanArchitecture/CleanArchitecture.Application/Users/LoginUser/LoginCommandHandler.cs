@@ -26,7 +26,7 @@ internal sealed class LoginCommandHandler : ICommandHandler<LoginCommand, string
             return Result.Failure<string>(UserErrors.NotFound);
         
         //2. Validar que el password es correcto para ese user
-        if (BCrypt.Net.BCrypt.Verify(request.Password, user.PasswordHash!.Value))
+        if (!BCrypt.Net.BCrypt.Verify(request.Password, user.PasswordHash!.Value))
             return Result.Failure<string>(UserErrors.InvalidCredentials);
 
         //3. Generar el JWT

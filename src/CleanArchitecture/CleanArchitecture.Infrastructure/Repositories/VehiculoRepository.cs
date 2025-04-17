@@ -1,3 +1,4 @@
+using CleanArchitecture.Domain.Abstractions.Specification;
 using CleanArchitecture.Domain.Vehiculos;
 
 namespace CleanArchitecture.Infrastructure.Repositories;
